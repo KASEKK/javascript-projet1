@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="userForm">
+        <label>Nom :</label>
+        <input type="text" id="username" placeholder="Ici, tape ton blase">
+	<br>
+
+        <label>Mot de passe :</label>
+        <input id="password" placeholder="Ici, tape ton mdp">
+	<br><br>
+
+        <button type= button id="envoyer">Envoyer</button>
+    </form>
+
+    <script>
+        const envoyer = document.querySelector("#envoyer");
+
+        envoyer.addEventListener("click", function() {
+            const username = document.querySelector("#username").value;
+            const password = document.querySelector("#password").value;
+
+            console.log("Nom:", username);
+            console.log("Mot de passe:", password);
+        })
+    </script>
+</body>
+</html>
