@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculatrice</h1>
+    <link rel="stylesheet" href="calculette.css"> <!-- Lien vers le fichier CSS -->
+    <input type="text"   id="number1" disabled>
+    <br>
+<!-- Touches de la calculette -->
+<table>
+    <tr>
+        <td><button onclick="input(7)">7</button></td>
+        <td><button onclick="input(8)">8</button></td>
+        <td><button onclick="input(9)">9</button></td>
+        <td><button onclick="clr()">CLR</button></td>
+        <td><button onclick="back()">BACK</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="input(4)">4</button></td>
+        <td><button onclick="input(5)">5</button></td>
+        <td><button onclick="input(6)">6</button></td>
+        <td><button onclick="input('+')">+</button></td>
+        <td><button onclick="input('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="input(1)">1</button></td>
+        <td><button onclick="input(2)">2</button></td>
+        <td><button onclick="input(3)">3</button></td>
+        <td><button onclick="input('*')">*</button></td>
+        <td><button onclick="input('/')">/</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="input(0)">0</button></td>
+        <td><button onclick="input('.')">.</button></td>
+        <td></td>
+        <td></td>
+        <td><button onclick="calculate()">=</button></td>
+
+    </tr>
+</table>
+
+<!-- Lien vers le fichier JavaScript -->
+<script src="calculette.js"></script>
+
+</body>
+</html>
+

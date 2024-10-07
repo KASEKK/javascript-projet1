@@ -12,18 +12,18 @@
 	<br>
 
         <label>Mot de passe :</label>
-        <input id="password" placeholder="Ici, tape ton mdp">
+        <input id="password" type="password" placeholder="Ici, tape ton mdp">
 	<br><br>
 
         <button type= button id="envoyer">Envoyer</button>
     </form>
 
     <script>
-        const envoyer = document.querySelector("#envoyer");
+        const envoyer = document.getElementById("envoyer");
 
         envoyer.addEventListener("click", function() {
-            const username = document.querySelector("#username").value;
-            const password = document.querySelector("#password").value;
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
 
             console.log("Nom:", username);
             console.log("Mot de passe:", password);
